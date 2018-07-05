@@ -1,5 +1,5 @@
-Editing Experiment Settings in Habit
-====================================
+Editing Experiment Settings
+===========================
 
 .. toctree::
    :maxdepth: 3
