@@ -3,7 +3,8 @@ Editing Experiment Settings
 
 .. toctree::
    :maxdepth: 3
-   
+   :hidden:
+      
    _stimulusdisplay
    _runtimecontrolpanel
    _intertrialinterval
@@ -28,9 +29,10 @@ There are three ways to edit the settings for an experiment:
    
 There are 4 settings pages that apply to the experiment as a whole:
 
-* `Stimulus Display Settings`_
-* The next one
-* and the one after that
+* :ref:`stimulusdisplaysettings-label`
+* :ref:`runtimecontrolpanel-label`
+* :ref:`intertrialinterval-label`
+* :ref:`looksettings-label`
 
 Each phase of the experiment has its own set of three (tabbed) 
 pages that contain the settings specific to each phase:

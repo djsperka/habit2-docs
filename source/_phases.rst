@@ -1,6 +1,7 @@
 Phases
 ======
 .. toctree::
+   :maxdepth: 3
    :hidden:
    
    _phase_phasesettings
@@ -40,7 +41,11 @@ Phase Types
 -----------
 
 When creating a new phase, you must specify what *type* of phase you want (the phase type can be changed
-after the phase is created).  
+after the phase is created). There are three phase types in Habit:
+
+* `Fixed Number of Trials`_
+* `Criterion to End`_ (Reduction of looking time)
+* `Total Looking Time`_
 
 Fixed Number of Trials
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -148,9 +153,29 @@ windows consisting of trials 3-5 and 4-6. The windows consisting of trials 5-7, 
 reduction of looking time, and hence for determining if the subject is habituated. 
 
 
+Total Looking Time
+~~~~~~~~~~~~~~~~~~
+
+*Total looking time* phases continue until the infant accumulates a specific amount of looking time. When configuring a phase
+of this type, you must give the phase a name and specify the basic trial settings as for the other phase types (see figure 2 above).
+
+.. figure:: figures/h2-newphase-total-1.png
+   :align: center
+   :height: 400px
    
+   **Figure 6:** Creating a new phase with a **Total Looking Time** type.  
  
+When creating first the user must specify basic settings for individual trials in this phase will end after a maximum 
+amount of looking time, or whether the trials should end after the stimulus has been presented for a fixed amount of time, 
+measured either from when stimulus onset or from initial looking.
+ 
+Finally, you must specify the accumulated looking time required to end the phase, and the maximum number of trials for the
+phase. The phase will end after the maximum number of trials if the subject has not accumulated the required amount of looking. 
 
-
+.. figure:: figures/h2-newphase-total-3.png
+   :align: center
+   :height: 400px
+   
+   **Figure 7:** Specifying the maximum number of trials and accumulated looking time required to end the phase. 
 
 

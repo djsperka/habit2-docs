@@ -1,3 +1,5 @@
+.. _runtimecontrolpanel-label:
+
 Run-time Control Panel Display Settings
 =======================================
 

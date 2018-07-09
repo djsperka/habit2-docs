@@ -1,3 +1,5 @@
+.. _looksettings-label:
+
 Look Settings
 =============
 

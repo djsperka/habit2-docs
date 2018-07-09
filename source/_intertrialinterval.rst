@@ -1,3 +1,5 @@
+.. _intertrialinterval-label:
+
 Intertrial Interval
 ===================
 

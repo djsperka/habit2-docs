@@ -1,3 +1,5 @@
+.. _stimulusdisplaysettings-label:
+
 Stimulus Display Settings
 =========================
 

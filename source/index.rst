@@ -16,9 +16,6 @@ Habit2 documentation
    _create_experiment
    _edit_experiment
    _phases
-   _phase_phasesettings
-   _phase_trialsettings
-   _phase_stimuli
 
 
 Indices and tables
