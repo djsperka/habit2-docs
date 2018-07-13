@@ -17,6 +17,7 @@ Habit2 documentation
    _edit_experiment
    _phases
    _running
+   _results
 
 Habit2 (short for habituation) is a software package for the presentation of visual and auditory stimuli to infants 
 and recording looking time (via an observer) to those stimuli. In general, this software is flexible and provides 

@@ -23,14 +23,13 @@ problems that must be corrected in order for the experiment to be run.)
 
 If the experimental configuration passes these checks, the *Run Settings* dialog is displayed. 
 
-.. figure:: figures/h2-run-settings.png
+.. figure:: figures/h2-runsettings.png
    :align: center
-   :height: 400px
+   :height: 200px
    
-   The *Run Settings* dialog. The ordering of stimuli to be presented in each phase is specified here. To run in a test
-   mode, where stimuli are displayed in a dialog on the local screen, check the box under the "Testing Options" heading. 
-   Notes on the subject and/or observer may be recorded here as well (these are not required).
-   
+   The *Run Settings* dialog for an experiment with two phases. 
+
+
 Testing Options
 ---------------
 
@@ -71,5 +70,21 @@ in such a way that each stimulus will be presented once before any stimulus is p
    
 In all cases, the Habit event log and results files will always contain the actual stimulus file(s) used and the order 
 in which they were presented. 
+
+
+After experiment is completed...
+--------------------------------
+
+On completion of all phases in the experiment, Habit displays a summary of the experiment, how each trial ended, whether the 
+subject was habituated (if there were habituation trials), and any looks that were recorded. This summary can be re-generated 
+using the results viewer. 
+
+.. figure:: figures/h2-results-summary.png
+   :align: center
+   :height: 300px
+   
+   The results summary dialog. The summary page can be re-generated using the results viewer. Additional actions are possible
+   using the buttons at the top of the summary. 
+   
 
 
