@@ -18,7 +18,7 @@ that the subject is ready for the next trial (by hitting the <Space> key).
 In either case, Habit can display a stimulus (commonly called an *attention getter*) during the intertrial interval, or can 
 display just the background color. There is also an option to play a *sound-only stimulus*. Such a stimulus can be used with a 
 *beeping blinking box*, which is a small device with a beeper and an LED light that beeps and flashes in a way that depends on 
-the sound level of the stimulus. We provide a schematic for building such a device.
+the sound level of the stimulus. Here is a `schematic <http://systems.ucdavis.edu/habit/beep-box-schematic.pdf>`_ for building such a device.
 
 .. figure:: figures/intertrial-interval.png
    :align: center
