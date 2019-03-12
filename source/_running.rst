@@ -1,5 +1,5 @@
-Running Experiments in Habit
-============================
+Running Experiments
+===================
 
 Once an experiment as been configured in Habit, you may run the experiment. You can run the experiment in a testing mode,
 where stimuli are displayed on your local screen. This can be much more useful than testing in a lab situation, where the 
