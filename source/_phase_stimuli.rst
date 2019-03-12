@@ -154,3 +154,89 @@ stimulus order may be removed from the list by selecting the order's name and cl
    in the "Stimulus Order" list and clicking either "Move Up" or "Move Down".
    
  
+Importing Stimuli/Orders
+------------------------
+
+Stimuli and/or stimuli orders for a phase may be imported from a text file. This can be useful for experiments with many stimuli
+and for which suitably randomized ordering across subjects is desirable. 
+
+.. figure:: figures/h2-import-stim.png
+   :align: center
+   :height: 300px
+   
+   To import a file, click the **Import** button on the *Stimuli* tab for the phase. 
+
+The text file to import may have stimuli, stimuli orders, or both. The stimuli and orders can be in any order. All imported
+stimuli and orders are *appended* to existing stimuli and orders. 
+
+Any lines that are blank, or that begin with #, are ignored. 
+
+Specifying a stimulus
+~~~~~~~~~~~~~~~~~~~~~
+
+A single stimulus (which specified the stimuli on each monitor and an independent sound file, if any) 
+is specified on a single line. The general format of a line containing a stimulus is ::
+
+   stim,<stim-name>,<stim-position-1>,<stim-filename-1>,<stim-position-2>,<stim-filename-2>,...
+   
+Note that the fields are separated by commas; spaces are trimmed from the start and end of each field. Fields with 
+embedded spaces should be enclosed in double quotes, e.g. \"My stimuli\". The fields and their contents are:
+
+*stim*
+   The word "stim" indicates that this line contains a stimulus. 
+   
+*<stim-name>*
+   Replace this with the name assigned to the stimulus. The name must be unique among the stimuli for this phase.
+
+*<stim-position-n>*
+   Replace this with the *position* for the stim. *Position* can be *right*, *left*, *center*, *sound*, or *audio*. 
+
+*<stim-filename-n>*
+   Replace this with the filename for the stim at position *<stim-position-n>*. The filename can be a full path (i.e. 
+   a path beginning with \"/\" on Mac/linux, or beginning with a drive letter on Windows), or a relative path (it will be 
+   appended to the *Stimulus Root Folder*) 
+   
+
+Below is an example taken from the file *\"ross-sheehy.csv\"*, which was used to import the stimuli for the 
+*RossSheehy* template experiment. The experiment uses two monitors and no sound files. ::
+
+   stim,stim-letters-plants-1,left,examples/images/letters/A.jpg,right,examples/images/plants/alumroot.jpg,,
+   stim,stim-letters-plants-2,left,examples/images/letters/B.jpg,right,examples/images/plants/butterflyweed.jpg,,
+   stim,stim-letters-plants-3,left,examples/images/letters/C.jpg,right,examples/images/plants/chamomile.jpg,,
+
+.. Note::
+
+   You cannot specify a volume level, or check the "Loop" checkbox, with an import file.
+   
+
+Specifying a stimulus order
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A stimulus order is also specified on a single line. The general format of a line containing a stimulus order is ::
+
+   order,<order-name>,<stim-name-a>,<stim-name-b>,<stim-name-c>,<stim-name-d>,...
+   
+The fields and their contents are:
+
+*order*
+   The word "order" indicates that this line contains a stimulus order.
+   
+*<order-name>*
+   Replace this with the name for this order. The order name must be unique among the orders for this phase.
+   
+*<stim-name-x>*
+   Replace this with the name(s) of the stimuli to be used in this order.
+   
+Below is an example of stimuli orders taken from the file *\"ross-sheehy.csv\"*: ::
+
+   order,letters-plants-A,stim-letters-plants-1,stim-letters-plants-2,stim-letters-plants-3,stim-letters-plants-4,stim-letters-plants-5,stim-letters-plants-6
+   order,letters-plants-B,stim-letters-plants-5,stim-letters-plants-6,stim-letters-plants-7,stim-letters-plants-8,stim-letters-plants-9,stim-letters-plants-10
+   order,plants-letters-A,stim-plants-letters-1,stim-plants-letters-2,stim-plants-letters-3,stim-plants-letters-4,stim-plants-letters-5,stim-plants-letters-6
+
+ 
+Additional examples
+~~~~~~~~~~~~~~~~~~~
+ 
+Additional examples are included with your habit installation (as of Habit 2.2.5). Each new workspace folder contains 
+a link to a folder called "misc", which has several example files, some of which are shown :doc:`here<_import_examples>`.
+ 
